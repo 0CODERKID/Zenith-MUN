@@ -1,0 +1,342 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 3.9%;
+  --foreground: 0 0% 98%;
+  --card: 0 0% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 0 0% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 272.1 91.7% 50.2%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 272.1 91.7% 50.2%;
+  --radius: 0.5rem;
+}
+
+body {
+  background-color: black;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none; /* Prevent bounce effect on mobile */
+}
+
+/* Improved image rendering for high-DPI displays */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* 3D text effect - full version for desktop */
+.text-shadow-3d {
+  text-shadow: 0 1px 0 rgba(168, 85, 247, 0.4), 0 2px 0 rgba(168, 85, 247, 0.3), 0 3px 0 rgba(168, 85, 247, 0.2), 0 4px
+    0 rgba(168, 85, 247, 0.1), 0 5px 10px rgba(0, 0, 0, 0.8);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+/* Simplified 3D text effect for mobile - better performance */
+.text-shadow-3d-mobile {
+  text-shadow: 0 1px 0 rgba(168, 85, 247, 0.4), 0 2px 0 rgba(168, 85, 247, 0.2), 0 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* 3D perspective container */
+.perspective-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) translateZ(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) translateZ(20px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0px) translateZ(0px) rotate(0deg);
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes reverse-spin-slow {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@keyframes spin-very-slow {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.01);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(0.98);
+  }
+}
+
+/* Mobile-optimized animations - shorter durations and simpler transforms for better performance */
+@media (max-width: 768px) {
+  @keyframes float {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-5px) rotate(2deg);
+    }
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      opacity: 0.4;
+      transform: scale(0.99);
+    }
+    50% {
+      opacity: 0.6;
+      transform: scale(1.01);
+    }
+    100% {
+      opacity: 0.4;
+      transform: scale(0.99);
+    }
+  }
+
+  @keyframes spin-slow {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-progress {
+  animation: progress 2s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-reverse-spin-slow {
+  animation: reverse-spin-slow 25s linear infinite;
+}
+
+.animate-spin-very-slow {
+  animation: spin-very-slow 30s linear infinite;
+}
+
+.animate-pulse {
+  animation: pulse 4s ease-in-out infinite;
+}
+
+/* Hover effects - disable on touch devices for better performance */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+@media (hover: none) {
+  .hover-scale:hover {
+    transform: none;
+  }
+}
+
+/* Improved touch targets for mobile */
+@media (max-width: 768px) {
+  button,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Reduce animation complexity on mobile */
+  .animate-spin-slow {
+    animation-duration: 30s;
+  }
+
+  .animate-reverse-spin-slow {
+    animation-duration: 35s;
+  }
+
+  .animate-spin-very-slow {
+    animation-duration: 40s;
+  }
+}
+
+/* High-contrast text for better readability */
+.high-contrast-text {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 480px) {
+  h1,
+  h2,
+  h3 {
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  /* Ensure buttons are easily tappable */
+  button,
+  .button,
+  [role="button"],
+  a {
+    padding: 0.75rem !important;
+    touch-action: manipulation;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Mobile-specific utilities */
+  .touch-target {
+    @apply p-2;
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* 3D transform utilities */
+  .translate-z-10 {
+    transform: translateZ(10px);
+  }
+
+  .translate-z-20 {
+    transform: translateZ(20px);
+  }
+
+  .translate-z-30 {
+    transform: translateZ(30px);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Improve tap highlight color for mobile */
+  a,
+  button {
+    -webkit-tap-highlight-color: rgba(168, 85, 247, 0.2);
+  }
+
+  /* Prevent text selection on interactive elements */
+  button,
+  a,
+  [role="button"] {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  /* Improve form element appearance on iOS */
+  input,
+  textarea,
+  select,
+  button {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: var(--radius);
+  }
+}
+
