@@ -118,13 +118,22 @@ export default function HeroSection() {
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
           <Button className="bg-gradient-to-r from-purple-500 to-cyan-400 text-white text-base sm:text-lg py-5 sm:py-6 px-6 sm:px-8 w-full sm:w-auto">
-            Register Now
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdmPCZRxxB6WtuwFfbBXHLtRtOGxt2GwsM7YDM-_es_Z5BgmA/viewform"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full h-full flex items-center justify-center"
+            >
+              Register Now
+            </a>
           </Button>
           <Button
             variant="outline"
             className="border-white/20 text-white text-base sm:text-lg py-5 sm:py-6 px-6 sm:px-8 w-full sm:w-auto mt-2 sm:mt-0"
           >
-            Learn More
+            <a href="#about" className="w-full h-full flex items-center justify-center">
+              Learn More
+            </a>
           </Button>
         </div>
       </div>
@@ -136,4 +145,3 @@ export default function HeroSection() {
     </section>
   )
 }
-

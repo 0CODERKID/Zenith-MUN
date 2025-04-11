@@ -9,13 +9,13 @@ export default function AboutSection() {
       <div className="container px-4">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="relative animate-fade-in order-2 md:order-1">
-            <div className="relative h-[300px] sm:h-[400px] rounded-xl overflow-hidden shadow-lg shadow-purple-900/20">
+            <div className="relative h-[300px] sm:h-[400px] rounded-xl overflow-hidden shadow-lg shadow-purple-900/20 flex items-center justify-center bg-black">
               <Image
-                src="\487492147_9954602731230492_8185762224211431359_n.jpg"
-                alt="ZENITH MUN Conference"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logoooooooooooooo.jpg-oalplzxgXfE1ES4J6Am2kN0TDY31Zm.jpeg"
+                alt="ZENITH MUN Logo"
+                width={300}
+                height={300}
+                className="object-contain"
                 priority
               />
             </div>
@@ -57,7 +57,14 @@ export default function AboutSection() {
               </div>
             </div>
             <Button className="bg-gradient-to-r from-purple-500 to-cyan-400 text-white w-full sm:w-auto">
-              Our Vision
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdmPCZRxxB6WtuwFfbBXHLtRtOGxt2GwsM7YDM-_es_Z5BgmA/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full h-full flex items-center justify-center"
+              >
+                Register Now
+              </a>
             </Button>
           </div>
         </div>
@@ -65,4 +72,3 @@ export default function AboutSection() {
     </section>
   )
 }
-

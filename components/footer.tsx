@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Facebook, Twitter, Instagram, Linkedin, Youtube, ArrowUp } from "lucide-react"
@@ -18,14 +19,41 @@ export default function Footer() {
       <div className="container px-4">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 mb-10 sm:mb-12 animate-fade-in">
           <div>
-            <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-400">
-              ZENITH MUN
-            </h3>
+            <div className="flex items-center gap-2 mb-3 sm:mb-4">
+              <div className="w-8 h-8 relative">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logoooooooooooooo.jpg-oalplzxgXfE1ES4J6Am2kN0TDY31Zm.jpeg"
+                  alt="ZENITH MUN Logo"
+                  width={32}
+                  height={32}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <h3 className="text-lg sm:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-cyan-400">
+                ZENITH MUN
+              </h3>
+            </div>
             <p className="text-white/70 mb-4 sm:mb-6 text-sm">
               A free online Model United Nations conference created by teenagers, for teenagers. Elevating diplomatic
               discourse and fostering the next generation of global leaders.
             </p>
-            
+            <div className="flex gap-4 sm:gap-5">
+              <a href="#" className="text-white/60 hover:text-purple-400 transition-colors p-2 -ml-2 touch-target">
+                <Facebook size={20} />
+              </a>
+              <a href="#" className="text-white/60 hover:text-purple-400 transition-colors p-2 touch-target">
+                <Twitter size={20} />
+              </a>
+              <a href="#" className="text-white/60 hover:text-purple-400 transition-colors p-2 touch-target">
+                <Instagram size={20} />
+              </a>
+              <a href="#" className="text-white/60 hover:text-purple-400 transition-colors p-2 touch-target">
+                <Linkedin size={20} />
+              </a>
+              <a href="#" className="text-white/60 hover:text-purple-400 transition-colors p-2 touch-target">
+                <Youtube size={20} />
+              </a>
+            </div>
           </div>
 
           <div>
@@ -102,4 +130,3 @@ export default function Footer() {
     </footer>
   )
 }
-
