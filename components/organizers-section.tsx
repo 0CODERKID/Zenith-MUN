@@ -103,6 +103,14 @@ export default function OrganizersSection() {
       bio: "Divyansh is a passionate MUN enthusiast with experience in multiple international conferences.",
       instagram: "divyansh_udaivir_shokeen",
     },
+
+    {
+      name: "Aarush",
+      position: "Designer & Creative Partner",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/divyansh.jpg-2uMaNrYGfF3ITADuix4qia0XNOhgAy.jpeg",
+      bio: "Divyansh is a passionate MUN enthusiast with experience in multiple international conferences.",
+      instagram: "divyansh_udaivir_shokeen",
+    },
   ]
 
   return (
