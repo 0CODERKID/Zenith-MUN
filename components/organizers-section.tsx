@@ -107,7 +107,7 @@ export default function OrganizersSection() {
     {
       name: "Aarush",
       position: "Designer & Creative Partner",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/divyansh.jpg-2uMaNrYGfF3ITADuix4qia0XNOhgAy.jpeg",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/public/aarush.jpg-2G1u77qmKF6JOd8XsHD5DR6iR6LMk.jpeg",
       bio: "Divyansh is a passionate MUN enthusiast with experience in multiple international conferences.",
       instagram: "divyansh_udaivir_shokeen",
     },
