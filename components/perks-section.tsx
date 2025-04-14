@@ -140,12 +140,7 @@ export default function PerksSection() {
                       </div>
                       <span>Submit your position paper by the deadline</span>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-5 h-5 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-xs text-purple-400">3</span>
-                      </div>
-                      <span>Actively participate in committee discussions</span>
-                    </li>
+                   
                   </ul>
                 </div>
 
@@ -164,21 +159,12 @@ export default function PerksSection() {
                       </div>
                       <span>Receive an award (Best Delegate, Outstanding Delegate, etc.)</span>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <div className="w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-xs text-cyan-400">3</span>
-                      </div>
-                      <span>Submit a formal request after the conference</span>
-                    </li>
+                   
                   </ul>
                 </div>
               </div>
 
-              <div className="mt-6 text-center">
-                <Button className="bg-gradient-to-r from-purple-500 to-cyan-400 text-white py-5 w-full sm:w-auto">
-                  Learn More About Benefits
-                </Button>
-              </div>
+              
             </CardContent>
           </Card>
         </div>
