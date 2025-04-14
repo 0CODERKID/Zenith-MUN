@@ -79,7 +79,7 @@ export default function PerksSection() {
                 </div>
 
                 <h3 className="text-lg sm:text-2xl font-bold text-white mb-3 sm:mb-4 text-center">
-                  Letters of Recommendation
+                  Letters of Appreciation
                 </h3>
 
                 <div className="space-y-3 sm:space-y-4 mb-4 sm:mb-6 flex-grow">
@@ -87,7 +87,7 @@ export default function PerksSection() {
                     <Star className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400 mt-1 flex-shrink-0" />
                     <p className="text-white/80 text-sm">
                       <span className="text-white font-medium">Personalized LOAs</span> - Outstanding delegates are
-                      eligible to receive personalized letters of recommendation from our experienced committee chairs.
+                      eligible to receive personalized LOA's from our experienced committee chairs.
                     </p>
                   </div>
 
@@ -110,7 +110,7 @@ export default function PerksSection() {
 
                 <div className="bg-white/5 rounded-lg p-3 sm:p-4 border border-cyan-500/10">
                   <p className="text-white/90 text-xs sm:text-sm italic">
-                    "Our letters of recommendation detail your specific contributions, skills demonstrated, and
+                    "Our letters of Appreciation detail your specific contributions, skills demonstrated, and
                     achievements during the conference—providing valuable third-party validation of your abilities."
                   </p>
                 </div>
@@ -145,7 +145,7 @@ export default function PerksSection() {
                 </div>
 
                 <div className="space-y-3 sm:space-y-4">
-                  <h4 className="text-cyan-400 font-medium">For Letters of Recommendation:</h4>
+                  <h4 className="text-cyan-400 font-medium">For Letters of Appreciation:</h4>
                   <ul className="space-y-2 text-white/80 text-sm">
                     <li className="flex items-start gap-2">
                       <div className="w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -157,7 +157,7 @@ export default function PerksSection() {
                       <div className="w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <span className="text-xs text-cyan-400">2</span>
                       </div>
-                      <span>Receive an award (to ebs only.)</span>
+                      <span>Receive an award (to Best Delegates and Highcom only.)</span>
                     </li>
                    
                   </ul>
