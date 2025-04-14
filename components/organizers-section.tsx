@@ -58,7 +58,7 @@ export default function OrganizersSection() {
       position: "CEO & Co-Founder",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/arijit.jpg-20G1u77qmKF6JOd8XsHD5DR6iR6LMk.jpeg",
       bio: "Arijit oversee all operations ensures all the staff have the resources they need to succeed in their committees.",
-      instagram: "Arij.2109",
+      instagram: "Arij.2109_",
     },
     {
       name: "Akanksha Mishra",
