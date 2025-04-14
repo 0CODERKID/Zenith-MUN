@@ -65,9 +65,9 @@ export default function AgendasPage() {
       levelColor: "text-yellow-400 bg-yellow-500/20",
       agendas: [
         {
-          title: "Conference Coverage and Reporting",
+          title: "Caricaturist",
           description:
-            "IP delegates will be assigned to cover specific committees, conducting interviews with delegates and chairs, writing articles, and producing multimedia content. They will report on key debates, resolutions, and behind-the-scenes developments throughout the conference.",
+            "In a Model United Nations (MUN), a caricature typically refers to a creative or humorous representation of delegates or events, often used to lighten the mood. The task of the caricature team includes:Observing delegates’ behavior, speeches, and memorable moments,Creating witty, exaggerated drawings or written descriptions and Showcasing highlights of the day with humor, satire, or playful commentary.",
         },
        
       ],
