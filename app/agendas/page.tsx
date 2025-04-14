@@ -23,13 +23,9 @@ export default function AgendasPage() {
         {
           title: "Addressing Human Rights Violations in Conflict Zones",
           description:
-            "This agenda item focuses on the protection of civilians in areas of armed conflict, with special attention to vulnerable populations including women, children, and minorities. Delegates will discuss mechanisms for monitoring, reporting, and addressing human rights violations in conflict zones, as well as strategies for holding perpetrators accountable.",
+            "Addressing the human rights of climate refugees requires global cooperation to ensure protection, dignity, and justice. Displaced by environmental disasters, they need legal recognition, access to basic services, and inclusion in policies that uphold their rights and ensure sustainable resettlement."
         },
-        {
-          title: "Digital Rights and Privacy in the Age of Surveillance",
-          description:
-            "As technology advances, questions about digital privacy, surveillance, and freedom of expression online have become increasingly important. This agenda item explores the balance between security concerns and individual rights in the digital sphere, addressing issues such as government surveillance, data protection, and censorship.",
-        },
+          
       ],
     },
     {
@@ -39,11 +35,7 @@ export default function AgendasPage() {
       level: "Intermediate",
       levelColor: "text-yellow-400 bg-yellow-500/20",
       agendas: [
-        {
-          title: "Women's Economic Empowerment in the Changing World of Work",
-          description:
-            "This agenda examines the structural barriers that women face in the labor market, including wage gaps, occupational segregation, and unpaid care work. Delegates will discuss policies and initiatives to promote women's economic empowerment, entrepreneurship, and equal participation in the workforce.",
-        },
+        
         {
           title: "Eliminating Violence Against Women and Girls",
           description:
@@ -59,9 +51,9 @@ export default function AgendasPage() {
       levelColor: "text-red-400 bg-red-500/20",
       agendas: [
         {
-          title: "The Cuban Missile Crisis, 1962",
+          title: "French Revolution National Assembly (1789) - A Nation Reborn: Representation, And  Religion, ",
           description:
-            "Delegates will be transported back to October 1962, at the height of the Cold War, when the United States discovered Soviet nuclear missiles in Cuba. As members of either the US Executive Committee or the Soviet Presidium, delegates will navigate this tense standoff that brought the world to the brink of nuclear war. The committee will explore alternative historical outcomes based on delegates' decisions.",
+            "A Nation Reborn: Representation, And  Religion, The National Assembly stands at a crossroads, faced with the daunting task of rebuilding a nation torn apart by inequality, privilege, and oppression. As the representatives of the French people, we must confront the entrenched interests of the nobility and the clergy, and establish a new order founded on the principles of representation, equality, and justice",
         },
       ],
     },
@@ -77,11 +69,7 @@ export default function AgendasPage() {
           description:
             "IP delegates will be assigned to cover specific committees, conducting interviews with delegates and chairs, writing articles, and producing multimedia content. They will report on key debates, resolutions, and behind-the-scenes developments throughout the conference.",
         },
-        {
-          title: "Digital Media Production",
-          description:
-            "In addition to written reporting, IP delegates will create digital content including photography, social media posts, and video interviews. This agenda focuses on presenting MUN proceedings in engaging, accessible formats for the wider delegate body.",
-        },
+       
       ],
     },
   ]
