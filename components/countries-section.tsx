@@ -112,16 +112,10 @@ export default function CountriesSection() {
     { name: "Huguenot Leader", committee: "HCC", taken: false },
 
     // IP Countries
-    { name: "Spain", committee: "IP", taken: false },
-    { name: "Sweden", committee: "IP", taken: false },
-    { name: "Switzerland", committee: "IP", taken: false },
-    { name: "Turkey", committee: "IP", taken: false },
-    { name: "Ukraine", committee: "IP", taken: false },
-    { name: "United Arab Emirates", committee: "IP", taken: false },
-    { name: "United Kingdom", committee: "IP", taken: true },
-    { name: "United States", committee: "IP", taken: true },
-    { name: "Venezuela", committee: "IP", taken: false },
-    { name: "Vietnam", committee: "IP", taken: false },
+    { name: "10 - Journalist", committee: "IP", taken: false },
+    { name: "10 - Caricaturis", committee: "IP", taken: false },
+    
+   
   ])
 
   // Filter countries based on search term and active filter
