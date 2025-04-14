@@ -3,6 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ChevronRight } from "lucide-react"
+import Link from "next/link"
 
 interface CommitteeProps {
   name: string
@@ -25,9 +26,11 @@ function CommitteeCard({ name, shortName, type, description, level }: CommitteeP
         <h3 className="text-lg sm:text-xl font-semibold text-white mb-1 sm:mb-2">{name}</h3>
         <p className="text-purple-400 text-xs sm:text-sm mb-3 sm:mb-4">{type}</p>
         <p className="text-white/70 text-xs sm:text-sm mb-3 sm:mb-4">{description}</p>
-        <Button variant="link" className="p-0 text-cyan-400 hover:text-cyan-300 text-sm">
-          Learn More <ChevronRight className="ml-1 h-3 w-3 sm:h-4 sm:w-4" />
-        </Button>
+        <Link href="/agendas" passHref>
+          <Button variant="link" className="p-0 text-cyan-400 hover:text-cyan-300 text-sm">
+            Learn More <ChevronRight className="ml-1 h-3 w-3 sm:h-4 sm:w-4" />
+          </Button>
+        </Link>
       </CardContent>
     </Card>
   )
@@ -126,4 +129,3 @@ export default function CommitteesSection() {
     </section>
   )
 }
-

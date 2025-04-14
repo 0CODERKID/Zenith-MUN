@@ -157,7 +157,7 @@ export default function PerksSection() {
                       <div className="w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <span className="text-xs text-cyan-400">2</span>
                       </div>
-                      <span>Receive an award (Best Delegate, Outstanding Delegate, etc.)</span>
+                      <span>Receive an award (to ebs only.)</span>
                     </li>
                    
                   </ul>
