@@ -25,14 +25,14 @@ export default function CountriesSection() {
   // You can update this array later with the actual committee assignments
   const [countries, setCountries] = useState<Country[]>([
     // UNHRC Countries
-    { name: "Bangladesh", committee: "UNHRC", taken: false },
+    { name: "Bangladesh", committee: "UNHRC", taken: true },
     { name: "Maldives", committee: "UNHRC", taken: false },
     { name: "Tuvalu", committee: "UNHRC", taken: true },
     { name: "Kiribati", committee: "UNHRC", taken: false },
     { name: "Vanuatu", committee: "UNHRC", taken: true },
     { name: "Nepal", committee: "UNHRC", taken: false },
     { name: "Haiti", committee: "UNHRC", taken: false },
-    { name: "Mozambique", committee: "UNHRC", taken: false },
+    { name: "Mozambique", committee: "UNHRC", taken: true },
     { name: "Sudan", committee: "UNHRC", taken: false },
     { name: "Turkey", committee: "UNHRC", taken: false },
     { name: "Lebanon", committee: "UNHRC", taken: false },
@@ -42,7 +42,7 @@ export default function CountriesSection() {
     { name: "Colombia", committee: "UNHRC", taken: false },
     { name: "United States", committee: "UNHRC", taken: false },
     { name: "China", committee: "UNHRC", taken: false },
-    { name: "India", committee: "UNHRC", taken: false },
+    { name: "India", committee: "UNHRC", taken: true },
     { name: "Russia", committee: "UNHRC", taken: false },
     { name: "Brazil", committee: "UNHRC", taken: false },
     { name: "Indonesia", committee: "UNHRC", taken: false },
@@ -58,20 +58,20 @@ export default function CountriesSection() {
 
     // UNCSW Countries
     { name: "United States", committee: "UNCSW", taken: false },
-    { name: "Canada", committee: "UNCSW", taken: false },
+    { name: "Canada", committee: "UNCSW", taken: true },
     { name: "Mexico", committee: "UNCSW", taken: false },
     { name: "Brazil", committee: "UNCSW", taken: false },
     { name: "Argentina", committee: "UNCSW", taken: false },
     { name: "United Kingdom", committee: "UNCSW", taken: false },
     { name: "France", committee: "UNCSW", taken: false },
-    { name: "Germany", committee: "UNCSW", taken: false },
+    { name: "Germany", committee: "UNCSW", taken: true },
     { name: "Italy", committee: "UNCSW", taken: false },
     { name: "Spain", committee: "UNCSW", taken: false },
     { name: "Russia", committee: "UNCSW", taken: false },
     { name: "China", committee: "UNCSW", taken: false },
     { name: "Japan", committee: "UNCSW", taken: true },
     { name: "South Korea", committee: "UNCSW", taken: true },
-    { name: "India", committee: "UNCSW", taken: false },
+    { name: "India", committee: "UNCSW", taken: true },
     { name: "Pakistan", committee: "UNCSW", taken: false },
     { name: "Bangladesh", committee: "UNCSW", taken: false },
     { name: "Australia", committee: "UNCSW", taken: false },
@@ -88,8 +88,8 @@ export default function CountriesSection() {
     { name: "Philippines", committee: "UNCSW", taken: false },
     { name: "Vietnam", committee: "UNCSW", taken: false },
     { name: "Thailand", committee: "UNCSW", taken: false },
-    { name: "Sweden", committee: "UNCSW", taken: false },
-    { name: "Norway", committee: "UNCSW", taken: false },
+    { name: "Sweden", committee: "UNCSW", taken: true },
+    { name: "Norway", committee: "UNCSW", taken: true },
     { name: "Netherlands", committee: "UNCSW", taken: false },
     { name: "Switzerland", committee: "UNCSW", taken: false },
 
@@ -144,7 +144,7 @@ export default function CountriesSection() {
             Countries by Committee
           </h2>
           <p className="text-white/80 max-w-2xl mx-auto px-2 text-base sm:text-lg">
-            ZENITH MUN offers 35 countries across four committees. Choose your preferred country and committee during
+            ZENITH MUN offers 85 countries across four committees. Choose your preferred country and committee during
             registration. Countries marked as taken have already been assigned.
           </p>
         </div>
